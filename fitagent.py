@@ -45,8 +45,8 @@ def main():
     col1, col2 = st.columns(2)
     with col1:
         age = st.number_input("Age", min_value=10, max_value=100, step=1)
-        weight = st.number_input("Weight (kg)", min_value=20.0, max_value=300.0, step=1.0)
-        height = st.number_input("Height (cm)", min_value=100.0, max_value=250.0, step=0.1)
+        weight = st.number_input("Weight (kg)", min_value=0.0, max_value=300.0, step=1.0)
+        height = st.number_input("Height (cm)", min_value=50.0, max_value=250.0, step=0.1)
         activity_level = st.selectbox("Activity Level", ["Sedentary", "Lightly Active", "Moderately Active", "Very Active"])
     with col2:
         sex = st.selectbox("Sex", ["Male", "Female", "Other"])
