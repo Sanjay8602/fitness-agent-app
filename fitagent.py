@@ -38,10 +38,10 @@ def main():
         )
 
         if not openai_api_key:
-            st.error(" API Key Missing!")
+            st.error(" Your API Key Missing!")
             st.stop()
 
-    # User Input
+    
     col1, col2 = st.columns(2)
     with col1:
         age = st.number_input("Age", min_value=10, max_value=100, step=1)
