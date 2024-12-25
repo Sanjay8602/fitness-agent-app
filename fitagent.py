@@ -13,7 +13,7 @@ def call_openai_api(prompt, api_key, model="gpt-4"):
     try:
         openai.api_key = api_key
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model=model,
             messages=[
                 {"role": "system", "content": "You are an expert in health, fitness, and dietary planning."},
                 {"role": "user", "content": prompt}
